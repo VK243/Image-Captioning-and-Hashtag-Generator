@@ -27,21 +27,17 @@ This project is an AI-powered tool that uses the Hugging Face model API and Open
 ## Installation and Setup
 
 1. Clone this repository to your local machine.
-
- ('git clone https://github.com/VK243/Image-Captioning-and-Hashtag-Generator.git')
-
+`git clone https://github.com/VK243/Image-Captioning-and-Hashtag-Generator.git`
 
 2. Navigate to the project directory and install the required packages.
-
+````
 $ cd ai-image-captioning-tool
 $ pip install -r requirements.txt
-
+````
 
 3. Set up your Hugging Face and OpenAI API credentials as environment variables.
 4. Run the Streamlit app using the following command:
-
-$ streamlit run app.py
-
+`streamlit run app.py`
 
 ## Usage
 
