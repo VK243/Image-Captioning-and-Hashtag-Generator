@@ -49,6 +49,8 @@ $ pip install -r requirements.txt
 ## Demo
 
 Click [here](https://youtu.be/o6sE8XtJDiI) to watch a demonstration of the tool in action.
+[![Demo Video](http://img.youtube.com/vi/o6sE8XtJDiI/0.jpg)](http://www.youtube.com/watch?v=o6sE8XtJDiI "Demo Video")
+
 
 ## Credits
 
