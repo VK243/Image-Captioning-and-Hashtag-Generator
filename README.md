@@ -28,7 +28,7 @@ This project is an AI-powered tool that uses the Hugging Face model API and Open
 
 1. Clone this repository to your local machine.
 
-$ git clone https://github.com/VK243/Image-Captioning-and-Hashtag-Generator.git
+ ('git clone https://github.com/VK243/Image-Captioning-and-Hashtag-Generator.git')
 
 
 2. Navigate to the project directory and install the required packages.
