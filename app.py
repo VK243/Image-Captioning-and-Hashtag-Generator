@@ -7,6 +7,7 @@ from tqdm import tqdm
 from PIL import Image
 import torch
 import os
+from dotenv import load_dotenv
 
 # Object creation model, tokenizer and processor from HuggingFace
 processor = AutoProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
@@ -17,8 +18,9 @@ tokenizer = AutoTokenizer.from_pretrained("Salesforce/blip-image-captioning-base
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
+load_dotenv()
 # Getting the key from env
-openai.api_key = "" ## you Openai key
+openai.api_key = os.environ.get('API_KEY') ## you Openai key
 openai_model = "text-davinci-002" # OpenAI model 
 
 
@@ -103,7 +105,7 @@ def prediction(img_list):
     
 def sample():
     # Sample Images in the 
-    sp_images = {'Sample 1':'image\\beach.png','Sample 2':'image\\coffee.png','Sample 3':'image\\footballer.png','Sample 4':'image\\prom.png'} 
+    sp_images = {'Sample 1':'image\\beach.png','Sample 2':'image\\coffee.png','Sample 3':'image\\footballer.png','Sample 4':'image\\mountain.jpg'} 
     
     colms = cycle(st.columns(4)) # No of Columns 
     
